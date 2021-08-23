@@ -1,0 +1,49 @@
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: none;
+}
+a:link{
+    text-decoration:none;
+    color: rgb(209, 6, 6);
+}
+a:visited{
+    color: rgb(36, 86, 221);
+}
+
+a:hover{
+    color: rgb(17, 0, 255);
+    font-size: 30px;
+}
+a:active {
+    text-decoration:underline;
+}
+h1,h2{
+    color: rgb(12, 51, 12);
+    text-align: center;
+    letter-spacing: 0.1cm;
+
+}
+
+p{
+    text-align: justify;
+    line-height: 0.8cm;
+}
+body{
+    background: rgb(119, 190, 112);
+    background: url(https://img.freepik.com/foto-gratis/modelo-marmol-superficial-primer-pared-piedra-marmol-verde-texturizo-fondo_85347-121.jpg?size=626&ext=jpg);
+    background-repeat: repeat;
+    background-size: 2000px;
+    background-attachment:fixed;
+    background-position: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+div{
+    background-color: #008858;
+    width: 100%;
+    height: 7em ;
+}
+
