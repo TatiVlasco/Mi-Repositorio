@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(135, 163, 78);
+    font-family: Arial;
+}
+.contenedor {
+    width: 80%;
+    max-width: 3000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background: rgb(18, 78, 18);
+    margin: 20px 0;
+    color: #FFF;
+}
+header h1{
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+    letter-spacing: 0.1cm;
+    font-family: 'Bungee', cursiva;
+}
+footer{
+    background: rgb(18, 78, 18);
+    margin: 20px 0;
+    text-align: center;
+}
+.main {
+    width: 70%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+    text-align: justify;
+    line-height: 0.7cm;
+}
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgb(185, 178, 178);
+    float: left;
+    text-align: justify;
+    line-height: 0.7cm;
+    font-family: 'Urbanista', sans-serif;
+}
+aside img{
+    width: 100%;
+    height: auto;   
+}
+footer{
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    color: #FFF;
+    background:rgb(18, 78, 18);
+    text-align: center;
+
+}
+   
+body{
+    background: rgb(119, 190, 112);
+    background: url(https://media.istockphoto.com/photos/abstract-green-leaf-texture-nature-background-tropical-leaf-picture-id1214705950?b=1&k=6&m=1214705950&s=170667a&w=0&h=31bTe9PmYNq3-T8yoMpDo5WOKqzW18WKnWJEcHAtI7g=);
+    background-repeat: repeat;
+    background-size: 2000px;
+    background-attachment:fixed;
+    background-position: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: rgb(72, 182, 226);
+}
