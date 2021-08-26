@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA 3 FUNCIONES JAVASCRIPT</title>
+</head>
+<h1>PRACTICA 3 FUNCIONES JAVASCRIPT</h1>
+<body>
+          <h2>1.Desarrolle una función en JavaScript que permita leer 3 números y devuelva el producto de los tres números.</h2>
+         <script>
+             var a = 10;
+             var b = 20;
+             var c = 20
+
+             var producto = a*b*c;
+             document.write('El producto es: '+producto);
+
+             //definir la funcion
+             function multiplicar (num1, num2, num3)
+             {
+                 var resultado= num1 * num2 * num3;
+                 document.write('El producto es:'+resultado);
+             }
+             //Llamar a la funcion
+
+
+
+
+          </script>
+          
+           <h2>2.Desarrolle una función en JavaScript que permita leer una temperatura en grados Celsios y devuelva el clima según la siguiente tabla:</h2>
+           <script>
+
+          </script>
+
+          <h2>3.Desarrolle una función en JavaScript que permita leer un numero y devuelva el factorial del mismo.</h2>
+          <script>
+                var a = 10;
+                var producto = a;
+                document.write('El factorial es:'+i);
+                
+               function factorial (n) {
+	            var total = 1; 
+	            for (i=1; i<=n; i++) {
+	        	total = total * i; 
+             	}
+            	return total; 
+               }
+
+          </script>
+
+
+         <h2>4. Desarrolle una función en JavaScript que muestre la fecha actual.</h1>
+          <script>
+            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            var f=new Date();
+            document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+
+    </script>
+
+<style>
+ body{
+     background: #e4a1ca;
+     font-size: 20px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+ }
+ h1{
+     text-align: center;
+ }
+    </style>
+</body>
+</html>
