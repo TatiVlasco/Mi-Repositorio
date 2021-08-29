@@ -6,69 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRACTICA 3 FUNCIONES JAVASCRIPT</title>
 </head>
-<h1>PRACTICA 3 FUNCIONES JAVASCRIPT</h1>
 <body>
-          <h2>1.Desarrolle una función en JavaScript que permita leer 3 números y devuelva el producto de los tres números.</h2>
+    <h1>PRACTICA 3 FUNCIONES JAVASCRIPT</h1>
+
+    <h2>1. Desarrolle una función en JavaScript que permita leer 3 
+        números y devuelva el producto de los tres números.</h2>
+    
+       <form action="">
+        <table border="1" align="center">
+            <tr>
+                <td>PRIMER VALOR:<input type="number" name="a" id="a"></td>
+            </tr>
+            <tr>
+                <td>SEGUNDO VALOR:<input type="number" name="b" id="b"></td>
+            </tr>
+            <tr>
+                <td>TERCER VALOR:<input type="number" name="c" id="c"></td>
+            </tr>
+            <tr>
+                <td>
+                    El producto es: <input type="text" id="Multiplicar">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="PRODUCTO" onclick="Calcular();" >
+                </td>
+            </tr>
+
+        </table>
+    </form>
+        <script>
+            function Calcular(){
+                var num1 = parseInt(document.getElementById('a').value);
+                var num2 = parseInt(document.getElementById('b').value);
+                var num3 = parseInt(document.getElementById('c').value);
+                var Multiplicar = num1*num2*num3;
+                document.getElementById('Multiplicar').value=Multiplicar;
+            }
+            
+
+        </script>
+
+        <h2>2. Desarrolle una función en JavaScript que permita leer una temperatura en grados Celsios y devuelva el clima.</h2>
+         
+        <script>
+
+            function temperatura()
+            
+         {
+            var t =15;
+          if (t>=-10 && t <=15)
+          {
+              document.write("Frio");
+          }
+              else
+              {
+                  if(t >=16 && t <=25)
+                  {
+                      document.write("Templado");
+                  }
+                  else
+                  {
+                      if(t>=26 && t<=40)
+                      {
+                          document.write("Calor");
+                      }
+                  }
+              }   
+            }
+
+        </script>
+
+         <h2>3. Desarrolle una función en JavaScript que permita leer un numero y devuelva el factorial del mismo.</h2>
+         
+         <div class="contenedor">  
+         
+         <input type="text" id="numero">
+         <br>
+         <button type="button" onclick="factorial();"> factorial</button> 
+         <br>
+         <label id="dato"></label>
+         </div>  
          <script>
-             var a = 10;
-             var b = 20;
-             var c = 20
-
-             var producto = a*b*c;
-             document.write('El producto es: '+producto);
-
-             //definir la funcion
-             function multiplicar (num1, num2, num3)
-             {
-                 var resultado= num1 * num2 * num3;
-                 document.write('El producto es:'+resultado);
+              function factorial()
+               {
+	            var num = document.getElementById('numero').value;
+                var resultado = 1;
+            	for (var i=1; i<=num; i++)
+                 {
+	        	resultado = resultado * i; 
+	             }
+	          document.getElementById('dato').innerHTML='El factorial es ' + + resultado;
              }
-             //Llamar a la funcion
+
+         </script>
+
+
+        <h2>4. Desarrolle una función en JavaScript que muestre la fecha actual.</h2>
+
+         <script>
+
+             var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+             var f=new Date();
+             document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());     
+ 
+         </script>
 
 
 
 
-          </script>
-          
-           <h2>2.Desarrolle una función en JavaScript que permita leer una temperatura en grados Celsios y devuelva el clima según la siguiente tabla:</h2>
-           <script>
-
-          </script>
-
-          <h2>3.Desarrolle una función en JavaScript que permita leer un numero y devuelva el factorial del mismo.</h2>
-          <script>
-                var a = 10;
-                var producto = a;
-                document.write('El factorial es:'+i);
-                
-               function factorial (n) {
-	            var total = 1; 
-	            for (i=1; i<=n; i++) {
-	        	total = total * i; 
-             	}
-            	return total; 
-               }
-
-          </script>
-
-
-         <h2>4. Desarrolle una función en JavaScript que muestre la fecha actual.</h1>
-          <script>
-            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-            var f=new Date();
-            document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
-
-    </script>
-
-<style>
- body{
-     background: #e4a1ca;
-     font-size: 20px;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
- }
- h1{
-     text-align: center;
- }
-    </style>
+    
 </body>
+<style>
+    table{
+        background: rgb(134, 165, 231);
+        text-align: center;
+    }
+    body{
+        background: rgb(115, 203, 238);
+        text-align: center;
+    }
+    h2{
+        text-align: left;
+
+    }
+    .contenedor
+    {
+        background: lightpink;
+        max-width: 200px;
+      
+    }
+</style>
 </html>
