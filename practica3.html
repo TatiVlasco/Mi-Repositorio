@@ -51,10 +51,9 @@
 
         <h2>2. Desarrolle una función en JavaScript que permita leer una temperatura en grados Celsios y devuelva el clima.</h2>
          
-        <script>
-
-            function temperatura()
+        
             
+         <script>
          {
             var t =15;
           if (t>=-10 && t <=15)
@@ -82,12 +81,14 @@
          <h2>3. Desarrolle una función en JavaScript que permita leer un numero y devuelva el factorial del mismo.</h2>
          
          <div class="contenedor">  
-         
+         <br>
          <input type="text" id="numero">
          <br>
          <button type="button" onclick="factorial();"> factorial</button> 
          <br>
          <label id="dato"></label>
+         <br>
+         <br>
          </div>  
          <script>
               function factorial()
@@ -103,21 +104,17 @@
 
          </script>
 
-
         <h2>4. Desarrolle una función en JavaScript que muestre la fecha actual.</h2>
 
-         <script>
+        <div class="fecha">
+            <script>
+            var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+            var diasSemana = new Array("Domingo", "Lunes", "Martes", "Mi&eacute;rcoles", "Jueves", "Viernes", "S&aacute;bado");
+            var f = new Date();
+            document.write(diasSemana[f.getDay()] + " " +" , "+ f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
+            </script>
+        </div>
 
-             var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-             var f=new Date();
-             document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());     
- 
-         </script>
-
-
-
-
-    
 </body>
 <style>
     table{
@@ -138,5 +135,10 @@
         max-width: 200px;
       
     }
+    .fecha{
+        color: rgb(165, 12, 12);
+        text-transform: uppercase;
+    }   
+
 </style>
 </html>
